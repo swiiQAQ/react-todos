@@ -11,7 +11,8 @@ class InputDos extends React.Component{
     render(){
         return(
             <div className="inputDos">
-                <span className=""></span>
+                <input onClick={this.props.selectAllHandler} type="checkbox" className="selectAllBtn" id="selectAllCheckBox" hidden/>
+                <label className="selectAll" for="selectAllCheckBox"></label>
                 <input value={this.props.value} type="text" onKeyUp={this.props.keyUpHandler} onChange={this.inputItem} placeholder="What needs to be done"></input>
             </div>
         )
