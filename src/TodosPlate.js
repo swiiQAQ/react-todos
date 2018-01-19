@@ -79,6 +79,7 @@ class TodosPlate extends React.Component{
         // debugger;
         this.renderDoItem();
     }
+    //splice后再splice需要将位置往前移
     spliceFunc(obj,spliceArr){
         for(let i=0;i<spliceArr.length;i++){
             obj.splice(spliceArr[i]-i,1);
